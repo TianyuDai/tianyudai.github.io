@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+
+<head>
+<title>Finkelstein Group</title>
+<meta charset="utf-8">
+<!-- Google Fonts -->
+<link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Quicksand">
+<!-- CSS Files -->
+<link rel="stylesheet" type="text/css" media="screen" href="css/gleblab.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/simple_menu.css">
+<!-- JS Files -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="header">
+  <div id="site_title"><h1><font color="white" size="50" ><b>Finkelstein Lab</b></font></h1></div>
+  <!-- Main Menu -->
+        <ol id="menu">
+            <li><a href="index.html">Home</a></li>
+                
+            <li><a href="research.html">Research</a>
+                <!-- sub menu -->
+                <ol>
+                    <li><a href="graphene.html">Supercurrent in quantum Hall regime</a></li>
+                    <li><a href="multiterminal.html">Multi-terminal Josephson junctions</a></li>
+                    <li><a href="carbon.html">Dissipative quantum dots</a></li>
+                    <li><a href="other.html">Other cryogenic projects</a></li>
+                </ol>
+               <!-- END sub menu -->
+            </li>
+
+            <li><a href="people.html">People</a></li>
+
+            <li><a href="pictures.html">Pictures</a></li>
+
+            <li><a href="publications.html">Publications</a></li>
+        </ol>
+</div>
+<!-- END header -->
+
+
+
+
+
+
+
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="img/groupfridge23.jpg">
+    <div class="text">The group</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="img/crate.jpg">
+    <div class="text">New dilution refrigerator!</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-------------------------------------------------------------------------------------------------->
+<!--<div id="navcontainer_gallery">
+
+  <li><img src="img/groupfridge23.jpg" width="380" height="230" style="border:2px solid black;">
+  <span>The group</span></li>
+
+  <li><img src="img/gleblab.jpg" width="330" height="230" style="border:2px solid black;">
+  <span>Our routine!</span></li>
+
+    <li><img src="img/crate.jpg" width="330" height="230" style="border:2px solid black;">
+  <span>Guess what's inside!</span></li>
+
+</div>-->
+
+
+<div id="container">
+  <!-- tab panes -->
+  <div id="prod_wrapper">
+
+
+    <div id="panes">
+      <div> 
+        <h2>Welcome to the Electronic Nanostructures Group</h2>
+        <p>We study electrical properties of carbon nanotubes, nanowires and graphene, as well as efficient methods to assemble nanoscale structures based on self-assembled DNA templates. Recently our work has focused on the interplay between superconductivity and ballistic transport phenomena in graphene heterostructures.</p>
+      </div>
+    </div>
+    <p>
+    <!-- END tab panes -->
+    <br clear="all">
+    <!-- navigator -->
+    <div id="prod_nav">
+      <ul>
+        <li><a href="graphene.html"><img src="img/SC_inter.jpg" height="180" width="220" alt=""><strong>Supercurrent  in <br>quantum Hall regime</strong></a></li>
+        <li><a href="multiterminal.html"><img src="img/K9.pdf" height="180" width="220" alt=""><strong>Multi-terminal <br>Josephson junctions</strong></a></li>
+        <li><a href="carbon.html"><img src="img/STG319.png" height="180" width="220" alt=""><strong>Dissipative quantum dots <br> in carbon nanotubes</strong></a></li>
+        <li><a href="other.html"><img src="img/shapiro.pdf" height="180" width="220" alt=""><strong>Other cryogenic projects</strong></a></li>
+      </ul>
+    </div>
+    <!-- END navigator -->
+  </div>
+
+  <!-- END prod wrapper -->
+
+
+
+  <div class="one last">
+    <h2>Latest News</h2>
+    <p style="color:red; font-size: 1.5em;">We are recruiting intuitive graduate students and post-docs especially those with RF experiences! Please contact Prof. Gleb Finkelstein for more information.</p>
+    <p><p>
+
+    <b>Mar 2019</b><br> We are presenting on the APS March meeting in section <a href="http://meetings.aps.org/Meeting/MAR19/Session/K19.4">K19</a>, <a href="http://meetings.aps.org/Meeting/MAR19/Session/L09.4">L09</a> and <a href="http://meetings.aps.org/Meeting/MAR19/Session/X01.12">X01</a>.<p>
+
+    <b>Feb 2019</b><br> We are installing the second dilution refrigerator with a 12T magnet. The discovery of exciting physics will be much more efficient. At the same time, the entire lab is in renovation. Let's expect a brand new lab in the coming summer.<p>
+
+    <b>Jan 2019</b><br> Lingfei has passed the prelim on his proposed study of Andreev edge states!<p>
+
+    <b>Jan 2019</b><br> Anne's paper about multi-terminal Josephson junctions is published on <a href="https://pubs.acs.org/doi/10.1021/acs.nanolett.8b04330">Nano Letters</a>!<p>
+
+    <b>Nov 2018</b><br> Ethan has passed the prelim on his proposed study of topological states in van der Waals heterostructures!<p>
+
+    <b>Aug 2018</b><br> Anne and Ming graduated. Anne will be a postdoc in Pearson's lab at Duke university and Ming will be a postdoc in Williams group at university of Maryland.<p>
+
+    
+  </div>
+  <div style="clear:both; height: 20px"></div>
+
+
+</div>
+<!-- END container -->
+
+
+
+
+
+
+
+
+<div id="footer">
+  <!-- First Column -->
+  <div class="one-third">
+    <h3>Useful Links</h3>
+    <ul class="footer_links">
+      <li><a href="http://www.phy.duke.edu">Physics Homepage</a></li>
+      <li><a href="http://www.duke.edu">Duke University</a></li>
+      <li><a href="http://www.phy.duke.edu/~gleb">Gleb Finkelstein Homepage</a></li>
+    </ul>
+  </div>
+
+  <!-- Third Column -->
+  <div class="one-third">
+    <h3>Collaborators</h3>
+    <ul class="footer_links">
+      <li><a href="https://ametlab.appstate.edu">Amet Lab</a></li>
+      <li><a href="https://phy.duke.edu/research/research-areas/condensed-matter-and-materials-physics/baranger-group">Baranger Group</a></li>
+      <li><a href="https://scholars.cityu.edu.hk/en/persons/ivan-valerievich-borzenets(9bc33933-d4c4-41b9-be0d-926f64d537d5).html">Dr. Borzenets</a></li>
+    </ul>
+  </div>
+
+  <div class="one-third">
+    <h3>Contact</h3>
+    <div id="social_icons">
+    <p>Physics Building 0065,<br>120 Science Drive,<br>Durham, NC</p>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+</div>
+<!-- END footer -->
+</body>
+</html>

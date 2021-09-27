@@ -36,14 +36,12 @@ body, html {
 <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar" style="padding-left:650px; padding-right:650px">
 	<span style="font-size:25px;">
-	<a href="#home" class="w3-bar-item w3-button w3-wide">Tianyu Dai</a>
+	<a href="home.html" class="w3-bar-item w3-button w3-wide">Tianyu Dai</a>
 	<!-- Right-sided navbar links -->
 	<div class="w3-right w3-hide-small">
-		<a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
-		<a href="#projects" class="w3-bar-item w3-button" style="padding-left:30px"><i class="fa fa-desktop"></i> Projects</a>
-		<a href="#publications" class="w3-bar-item w3-button" style="padding-left:30px"><i class="fa fa-book"></i> Publications & Talks</a>
-		<a href="#github" class="w3-bar-item w3-button"style="padding-left:30px"><i class="fa fa-github"></i> Github</a>
-		<a href="#others" class="w3-bar-item w3-button"style="padding-left:30px"><i class="fa fa-th"></i> Others</a>
+		<a href="home.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+		<a href="projects.html" class="w3-bar-item w3-button" style="padding-left:30px"><i class="fa fa-desktop"></i> Projects</a>
+		<a href="publications.html" class="w3-bar-item w3-button" style="padding-left:30px"><i class="fa fa-book"></i> Publications & Talks</a>
         </div>
 	<!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -54,14 +52,13 @@ body, html {
     </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- Sidebar on small screens when clicking the menu icon >
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
-    <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">Publications & Talks</a>
-    <a href="#github" onclick="w3_close()" class="w3-bar-item w3-button">Github</a>
-    <a href="#others" onclick="w3_close()" class="w3-bar-item w3-button">Others</a>
-</nav>
+    <a href="projects.html" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
+    <a href="publications.html" onclick="w3_close()" class="w3-bar-item w3-button">Publications & Talks</a>
+    <a href="others.html" onclick="w3_close()" class="w3-bar-item w3-button">Others</a>
+</nav-->
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1280px;">
@@ -78,7 +75,9 @@ body, html {
 	        <div class="w3-container" style="padding-left:20pt;padding-right:20pt">
 		<span style="font-size:20px;">
 		    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-gray"></i>Big-data researcher <span>&#183;</span> Computational physicist</p>
-		    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-gray"></i>tianyu.dai@duke.edu</p>
+		    <p><a href="mailto:tianyu.dai@duke.edu"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-gray"></i>tianyu.dai@duke.edu</a></p>
+		    <p><a href="https://www.github.com/TianyuDai" target="_blank"><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-gray"></i>My GitHub</a></p>
+		    <p><a href="https://www.linkedin.com/in/tianyu-dai-448767152/" target="_blank"><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-gray"></i>LinkedIn profile</a></p>
 		    <hr>
 
 		    <p class="w3-large"><b><i class="w3-text-gray"></i>Programming Language</b></p>
@@ -99,24 +98,14 @@ body, html {
             <!--div class="w3-container w3-card w3-white w3-margin-bottom"-->
 	    <div class="w3-container" style="padding-top:120px;padding-left:30pt">
             <span style="font-size:20px;">
-		    <p align="justify"> I am a phD candidate in <b>physics</b> at Duke, expected to graduate in <b>December 2022</b>. I am also pursuing a concurrent <b>computer science</b> master degree. I am actively looking for <b>an internship in summer 2022</b> and a full-time job afterwards. My current research interest is applying Bayesian techniques and machine learning tools in nuclear physics. </p>
-		    <p align="justify"> As a theoretical nuclear physicist, I work as <b>a big data researcher</b>. We build computational models to simulate high energy particle collisions. By running those physics models millions of times, a huge amount of data are generated using <b>high-throughput computation</b>. We then apply statistical tools to analyze the generated data. You can find the details about applying Bayesian analysis to quantify parameters of our physics model in the Project section. </p>
-		    <p align="justify"> Now I am trying to make a transition <b>from academia to industry</b>. I performed several projects about <b>recommendation system and image recognition</b> supervised by Computer Science professors. I have also taken many classes about numrical analysis, statistics, machine learning and algorithms, and I am taking a deep learning class this semester. I use python and C++ everyday. Now I am learning SQL. I am always looking for an opportunity to apply what I have learned about <b>big data and machine learning</b> in the industry. 
+		    <p align="justify"> I am a phD candidate in <b>physics</b> at <a href="https://www.duke.edu">Duke</a>, expected to graduate in <b>December 2022</b>. I am also pursuing a concurrent <b>computer science</b> master degree. I am actively looking for <b>an internship in summer 2022</b> and a full-time job afterwards. My current research interest is applying Bayesian techniques and machine learning tools in nuclear physics. </p>
+		    <p align="justify"> As a theoretical nuclear physicist, I work as <b>a big data researcher</b>. We build computational models to simulate high energy particle collisions. By running those physics models millions of times, a huge amount of data are generated using <b>high-throughput computation</b>. We then apply statistical tools to analyze the generated data. You can find the details about we applying Bayesian analysis to quantify model parameters in <a href="projects.html">Projects</a> and <a href="publications.html">Publications</a>. </p>
+		    <p align="justify"> Now I am trying to make a transition <b>from academia to industry</b>. I performed several projects about <b>recommendation system and image recognition</b> supervised by Computer Science professors with details in <a href="projects.html">Projects</a>. I have also taken classes about numrical analysis, statistics, machine learning and algorithms, and I am taking a deep learning class this semester. I use python and C++ everyday. Now I am learning SQL. I am always looking for an opportunity to apply what I have learned about <b>big data and machine learning</b> into the industry. 
 	    </div>
 	    </span>
 	</div>
     </div>
   </div>
-
-
-
-
-<div class="social">
-    <a href="https://github.com/TianyuDai" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-</div>
-
-
-
 
 </body>
 </html>
